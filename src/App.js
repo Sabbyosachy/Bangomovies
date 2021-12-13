@@ -14,7 +14,6 @@ function App() {
    <BrowserRouter>
     <Header/>
     <div className="App">
-    <BottomNav/> 
     <Container>
     <Routes>
     <Route path="/" element={<Trending />} />
@@ -23,6 +22,7 @@ function App() {
     <Route path="/search" element={<Search />} />
     </Routes>
     </Container>
+    <BottomNav/> 
     </div>
     </BrowserRouter>
   );
