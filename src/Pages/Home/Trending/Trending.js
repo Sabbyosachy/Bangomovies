@@ -19,7 +19,7 @@ const Trending = () => {
     
     return (
         <div>
-            <span className='title'>Trending</span>
+            <span className='pagetitle'>Trending</span>
           <Container>
           <div className='trends'>
              {

@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <div>
            <div className='headdertext'> 
-           <span className='text1'>BANGO MOVIES</span>
+           <span className='text1' onClick={()=>window.scroll(0,0)}>BANGO MOVIES</span>
            <MovieIcon sx={{fontSize:30, color:'white'}}/>
            </div>
         </div>

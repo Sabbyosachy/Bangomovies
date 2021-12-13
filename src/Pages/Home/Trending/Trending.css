@@ -1,5 +1,20 @@
 .trends{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     margin-bottom: 50px;
+}
+@media (max-width:1000) {
+    .trends{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+@media (max-width:668) {
+    .trends{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 }
