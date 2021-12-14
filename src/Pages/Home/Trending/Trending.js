@@ -3,18 +3,20 @@ import { useEffect, useState } from 'react';
 import './Trending.css';
 import SingleContent from '../SingleContent/SingleContent';
 import { Container } from '@mui/material';
+import CustomPagination from '../../CustomPagination/CustomPagination';
 
 const Trending = () => {
     const [content, setContent]=useState([]);
+    const[page,setPage]=useState(1);
     const fetchTreanding= async ()=>{
-       const { data }= await axios.get(`https://api.themoviedb.org/3/trending/all/day?api_key=${process.env.REACT_APP_API}`)
+       const { data }= await axios.get(`https://api.themoviedb.org/3/trending/all/day?api_key=${process.env.REACT_APP_API}&page=${page}`)
          
-       setContent(data.results)
+       setContent(data.results);
 
     }
     useEffect(()=>{
        fetchTreanding();
-    },[])
+    },[page])
 
     
     return (
@@ -36,6 +38,7 @@ const Trending = () => {
                  ))
              }
            </div>
+           <CustomPagination setPage={setPage}/>
           </Container>
         </div>
     );
