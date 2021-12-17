@@ -7,7 +7,6 @@ import { Container } from '@mui/material';
 import Tvseries from './Pages/Home/Tvseries/Tvseries';
 import Trending from './Pages/Home/Trending/Trending';
 import Movies from './Pages/Home/Movies/Movies';
-import Search from './Pages/Home/Search/Search';
 
 function App() {
   return (
@@ -19,7 +18,6 @@ function App() {
     <Route path="/" element={<Trending />} />
     <Route path="/tvseries" element={<Tvseries />} />
     <Route path="/movies" element={<Movies />} />
-    <Route path="/search" element={<Search />} />
     </Routes>
     </Container>
     <BottomNav/> 

@@ -3,7 +3,6 @@ import React, { useEffect } from 'react';
 import './BottomNav.css';
 import WhatshotIcon from '@mui/icons-material/Whatshot';
 import MovieIcon from '@mui/icons-material/Movie';
-import SearchIcon from '@mui/icons-material/Search';
 import TvIcon from '@mui/icons-material/Tv';
 import { useNavigate } from 'react-router-dom';
 
@@ -38,7 +37,6 @@ const BottomNav = () => {
         <BottomNavigationAction  style={{color:"white"}} label="Trending" icon={<WhatshotIcon />} />
         <BottomNavigationAction  style={{color:"white"}} label="Movies" icon={<MovieIcon />} />
         <BottomNavigationAction   style={{color:"white"}} label="Tv-Series" icon={<TvIcon/>} />
-        <BottomNavigationAction  style={{color:"white"}} label="Search" icon={<SearchIcon />} />
       </BottomNavigation>
     </Box>
         </div>
